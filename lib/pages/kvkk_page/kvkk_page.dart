@@ -7,6 +7,7 @@ import 'package:afet_destek/shared/widgets/responsive_app_bar.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class TermsPage extends StatefulWidget {
   const TermsPage._({required this.title, required this.body});
@@ -17,10 +18,12 @@ class TermsPage extends StatefulWidget {
     required String title,
     required String body,
   }) async {
-    setUiIframeParameter(
-      key: 'browser_page',
-      id: 'browser_url',
-    );
+    if (kIsWeb) {
+      setUiIframeParameter(
+        key: 'browser_page',
+        id: 'browser_url',
+      );
+    }
     await Navigator.of(context).push<bool>(
       MaterialPageRoute<bool>(
         builder: (context) => TermsPage._(body: body, title: title),
@@ -33,6 +36,25 @@ class TermsPage extends StatefulWidget {
 }
 
 class _TermsPageState extends State<TermsPage> {
+  late final WebViewController controller;
+
+  @override
+  void initState() {
+    super.initState();
+    if (!kIsWeb) {
+      controller = WebViewController()
+        ..loadRequest(Uri.parse('https://afetdestekkvvk.web.app/'));
+    }
+  }
+
+  @override
+  void dispose() {
+    if (!kIsWeb) {
+      controller.clearLocalStorage();
+    }
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -80,6 +102,12 @@ class _TermsPageState extends State<TermsPage> {
                       },
                     ),
                   )
+                else
+                  Expanded(
+                    child: WebViewWidget(
+                      controller: controller,
+                    ),
+                  ),
               ],
             ),
           ),
