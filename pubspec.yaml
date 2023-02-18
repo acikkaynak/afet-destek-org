@@ -34,6 +34,7 @@ dependencies:
   json_annotation: 4.8.0
   logger: 1.1.0
   motion_toast: 2.6.4
+  package_info_plus: 3.0.3
   phone_numbers_parser: 7.0.0+1
   reactive_forms: 14.1.0
   sentry_flutter: 6.19.0

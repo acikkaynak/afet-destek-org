@@ -123,6 +123,23 @@
   "safari_tutorial_location": "2- Konum Servisleri",
   "safari_tutorial_closed": "3- Kapalı Butonu",
   "safari_tutorial_opened": "4- Açık Hale Getir",
+  "about_page_title": "Hakkımızda",
+  "who_we_are_title": "Biz Kimiz?",
+  "who_we_are_text": "Biz yazılım geliştiriciler, ürün yöneticileri, tasarımcılar ve içerik üreticileri olarak ihtiyaca yönelik toplanmış gönüllü bir ekibiz.",
+  "what_we_do_title": "Ne yapıyoruz?",
+  "what_we_do_text": "İnsanların eşya ihtiyaçlarını paylaşarak, yardım etmek isteyen kişilerin bu ihtiyaçları karşılamasını sağlayan bir platform geliştiriyoruz.",
+  "what_is_our_goal_title": "Amacımız Nedir?",
+  "what_is_our_goal_text": "İnsanlar arasındaki yardımlaşmayı teşvik etmek ve insanların eşya ihtiyaçlarını paylaşarak, yardım etmek isteyen kişilerin bu ihtiyaçları karşılamasına yardımcı olmak amacıyla bir platform sunuyoruz.",
+  "different_from_others_title": "Diğer platformlardan farkımız?",
+  "different_from_others_text": "Paylaşılan yardım ihtiyaçlarının konum uzaklığına göre değerlendirilip yardım severin ulaşabiliceği en yakın ihtiyacı karşılaması sağlanmaktadır.",
+  "contact_info_title": "İletişim Bilgileri",
+  "contact_info_text": "Acil bir durum olmadığı sürece mail ile iletişime geçmenizi rica ediyoruz.",
+  "contact_info_phone_title": "Tel:",
+  "contact_info_email_title": "Mail:",
+  "social_media_info_title": "Sosyal medya bilgileri",
+  "app_version_title": "Uygulama Sürümü",
+  "app_version_text": "Sürüm:",
+  "app_build_number_text": "Derleme:",
   "become_volunteer_nav_btn": "Bildirim Al",
   "become_volunteer_page_title": "Bildirim Al",
   "become_volunteer_submit_btn": "Bildirim Al",
@@ -132,3 +149,4 @@
   "volunteer_subscribe_failed": "Hata oluştu. Lütfen tarayıcınızda bildirim iznini verdiğinizden emin olunuz veya başka tarayıcıda deneyiniz. (Chrome tarayıcı önerilir.)",
   "volunteer_not_available_on_ios": "Bu özellik iOS'ta henüz desteklenmemekedir."
 }
+
